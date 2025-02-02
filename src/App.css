@@ -1,0 +1,69 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-Color: #34495e ;
+}
+
+/* Conteneur principal du labyrinthe */
+.labyrinthe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+}
+
+/* Grille qui représente le labyrinthe */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);  
+  gap: 2px;
+  margin-top: 20px;
+  justify-items: center;  
+  align-items: center;    
+}
+
+/* Cellule individuelle du labyrinthe */
+.cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.wall {
+  background-color: #333; /* Couleur des murs */
+}
+
+.path {
+  background-color: #ddd; /* Couleur des chemins */
+}
+
+.start {
+  background-color: green; /* Départ */
+  color: white;
+}
+
+.end {
+  background-color: red; /* Arrivée */
+  color: white;
+}
+
+/* Style du bouton pour générer un nouveau labyrinthe */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #17a589 ; 
+  
+}
